@@ -23,6 +23,27 @@ class OrderItem(models.Model):
     ordered = models.BooleanField(default=False)
 ```
 
+the imports:
+```python
+from django.shortcuts import render
+
+from django.views.generic import TemplateView, ListView, DetailView, View
+
+from .models import *
+
+from django.contrib import messages
+
+from django.utils import timezone,dateformat
+
+from django.core.exceptions import ObjectDoesNotExist
+
+from django.contrib.auth.models import User
+
+from django.db.models import F
+
+from .form import CouponForm
+```
+
 lets start:
 the first step create models:
 
